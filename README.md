@@ -5,7 +5,9 @@ A collection of notes, examples, and projects showcasing my understanding of SQL
     - Definition of SQL
     - Importance of SQL
     - Types of SQL (e.g., MySQL, PostgreSQL, SQL Server)
+    - types of SQL Commands (DDL, DML, DCL, TCL AND DQL)
     - Types, uses and importance of keys in SQL (Primary Key, Foreign Key)
+    - Understanding Data types in SQL (Varchar, Date, NVarchar, etc.)
 
 2. Creating Databases and Tables
     - How to create and name a database
