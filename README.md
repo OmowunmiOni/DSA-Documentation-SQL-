@@ -14,29 +14,41 @@ A collection of notes, examples, and projects showcasing my understanding of SQL
     - How to create tables tables (data types, constraints, etc.)
     - How to import data from other sources into your table
     - Example database and table creation scripts
-###  Examples: 
-create database DSA_db
+##  Example: 
+        create database DSA_db
 
-create Table Employee (
-Staff_id varchar (10),
-First_Name varchar (255),
-Last_Name varchar (255),
-Gender varchar (10),
-Date_of_Birth date,
-Hire_Date datetime,
-primary key (Staff_id)
-)
+        create Table Employee (
+        Staff_id varchar (10),
+        First_Name varchar (255),
+        Last_Name varchar (255),
+        Gender varchar (10),
+        Date_of_Birth date,
+        Hire_Date datetime,
+        primary key (Staff_id)
+        )
 
------import CSV FILES INTO DB-----
----EMPLOYEE.CSV
----SALARY.CSV
----PAYMENT.CSV
+        -----import CSV FILES INTO DB-----
+        ---EMPLOYEE.CSV
+        ---SALARY.CSV
+        ---PAYMENT.CSV
 
 3. SQL Queries
-    - Introduction to SQL queries (SELECT, FROM, WHERE, etc.)
+    - Introduction to SQL queries (SELECT, DROP, TRUNCATE, DELETE, FROM, WHERE, etc.)
+## Example: -- Simple SELECT query
+            SELECT * FROM Employees;
+
     - Filtering and sorting data
+## Example: -- Filtering data
+            SELECT * FROM customers WHERE country='Nigeria';
+
     - Joining tables (LEFT JOIN, INNER JOIN, FULL OUTER JOIN, etc.)
     - How to union tables
+## Example: select * from [dbo].[DSA_Mall_Ghana]
+            union
+            select * from [dbo].[DSA_Mall_Ikeja]
+            union
+            select * from [dbo].[DSA_Mall_Port_Harcourt]
+
     - Aggregating data (GROUP BY, HAVING, etc.)
 
 4. SQL Clauses
@@ -44,7 +56,7 @@ primary key (Staff_id)
     - GROUP BY clause
     - HAVING clause
     - ORDER BY clause
-      Using BETWEEN, AND, OR in SQL
+    - Understanding and using Logical Operators in SQL (AND, OR)
 
 5. SQL Views
     - What are SQL views?
